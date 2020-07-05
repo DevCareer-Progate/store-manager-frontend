@@ -7,12 +7,50 @@
 
     <!-- Global CSS/Reset -->
     <link rel="stylesheet" href="./assets/css/global.css" />
-    <!-- Login CSS -->
-    <link rel="stylesheet" href="./assets/css/login.css" />
+    <!-- Index CSS -->
+    <link rel="stylesheet" href="./assets/css/index.css" />
   </head>
   <body>
     <section id="login">
-      <h1>Login</h1>
+      <!-- Login Form -->
+      <form class="form" autocomplete="off">
+        <div class="form__body">
+          <h4 class="form__title">
+            Hello, <br />
+            Welcome Back
+          </h4>
+          <div class="form__item">
+            <input
+              required
+              type="text"
+              class="form__item__input"
+              id="username"
+            />
+            <label for="usernmae" class="form__item__label"
+              >Enter Username</label
+            >
+            <small></small>
+          </div>
+          <div class="form__item mb-0">
+            <input
+              required
+              type="password"
+              class="form__item__input"
+              id="password"
+            />
+            <label for="password" class="form__item__label"
+              >Enter Password</label
+            >
+            <small></small>
+          </div>
+          <div class="form__forgot">
+            <a href="" class="forgot__password">Forgot Password ?</a>
+          </div>
+        </div>
+        <div class="form__footer">
+          <button class="button" type="submit">Login</button>
+        </div>
+      </form>
     </section>
   </body>
 </html>
