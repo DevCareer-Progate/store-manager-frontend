@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Manager | Add product</title>
+
+
+    <!-- Global CSS/Reset -->
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <!-- add product CSS -->
+    <link rel="stylesheet" href="./assets/css/add_product.css" />
+</head>
+
+<body>
+    <!-- Whole page  -->
+    <section id="add_product">
+
+        <!-- form section -->
+        <form class="form">
+            <!-- form title -->
+            <h1 class="form_title">Create product</h1>
+            <h2 class="form_sub_title">Basic data</h2>
+
+            <!-- form body -->
+            <div class="form_body">
+                <!-- Product name -->
+                <div>
+                    <div>
+                        <label for="name">Product Name</label>
+                    </div>
+                    <div>
+                        <input type="text" id="name" name="name" placeholder="Product name.." required>
+                    </div>
+                </div>
+
+                <!-- Product price -->
+                <div>
+                    <div>
+                        <label for="price">Price</label>
+                    </div>
+                    <div>
+                        <input type="text" id="price" name="price" placeholder="$ .." required>
+                    </div>
+                </div>
+                
+                <!-- product Description -->
+                <div>
+                    <div>
+                        <label for="subject">Description</label>
+                    </div>
+                    <div>
+                        <textarea id="subject" name="subject" rows="5" cols="0"
+                            placeholder="Write something.."></textarea>
+                    </div>
+                </div>
+
+                <!-- Category -->
+                <div class="category_section">
+                    <div>
+                        <label for="category">Category</label>
+                    </div>
+                    <div>
+                        <select id="category" name="category">
+                            <option value="food">Food & Drink</option>
+                            <option value="books">Books</option>
+                            <option value="groceries">groceries</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- submit / cancel section -->
+                <div class="submit_section">
+                    <input type="reset" value="Cancel" class="cancel_btn">
+                    <input type="submit" value="Create product" class="create_btn">
+                </div>
+            </div>
+        </form>
+    </section>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
