@@ -25,7 +25,11 @@ window.addEventListener('DOMContentLoaded', () => {
   loginBtn.addEventListener('click', e => {
     e.preventDefault()
     if (!username.value || !password.value) {
-      alert('All fields are required')
+      swal({
+        text: 'All fields are required',
+        icon: 'info',
+        button: 'Ok',
+      })
       return
     }
 
@@ -34,6 +38,9 @@ window.addEventListener('DOMContentLoaded', () => {
       username: username.value.trim(),
       password: password.value.trim(),
     }
+
+    loginBtn.textContent = 'Loading'
+
     axios
       .post(`${API_URL}/login`, data)
       .then(res => {
@@ -57,7 +64,12 @@ window.addEventListener('DOMContentLoaded', () => {
         }
       })
       .catch(err => {
-        alert('Incorrect login credentials')
+        swal({
+          text: 'Incorrect Login Credentials',
+          icon: 'error',
+          button: 'Ok',
+        })
+        loginBtn.textContent = 'Login'
       })
   })
 })
