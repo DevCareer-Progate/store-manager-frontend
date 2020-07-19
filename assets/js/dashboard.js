@@ -1,4 +1,5 @@
 window.addEventListener('DOMContentLoaded', () => {
+  // Check if user is already logged in and redirect appropriately
   if (!localStorage.getItem('user')) {
     location.href = './index.html'
   } else {

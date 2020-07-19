@@ -57,7 +57,7 @@ window.addEventListener('DOMContentLoaded', () => {
         }
       })
       .catch(err => {
-        alert(err)
+        alert('Incorrect login credentials')
       })
   })
 })
