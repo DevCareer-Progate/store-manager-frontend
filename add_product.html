@@ -30,8 +30,8 @@
             <div>
               <input
                 type="text"
-                id="name"
-                name="name"
+                id="title"
+                name="title"
                 placeholder="Product name.."
                 required
               />
@@ -45,17 +45,33 @@
             </div>
             <div>
               <input
-                type="text"
+                type="number"
                 id="price"
                 name="price"
-                placeholder="$ .."
+                placeholder="Enter Product Price"
+                required
+              />
+            </div>
+          </div>
+
+          <!-- Product Quantity -->
+          <div>
+            <div>
+              <label for="quantity">Quantity</label>
+            </div>
+            <div>
+              <input
+                type="number"
+                id="quantity"
+                name="quantity"
+                placeholder="Enter Product Quantity"
                 required
               />
             </div>
           </div>
 
           <!-- product Description -->
-          <div>
+          <!-- <div>
             <div>
               <label for="subject">Description</label>
             </div>
@@ -68,7 +84,7 @@
                 placeholder="Write something.."
               ></textarea>
             </div>
-          </div>
+          </div> -->
 
           <!-- Category -->
           <div class="category_section">
@@ -85,11 +101,18 @@
           </div>
           <!-- submit / cancel section -->
           <div class="submit_section">
-            <input type="reset" value="Cancel" class="cancel_btn" />
+            <a href="./dashboard.html" class="cancel_btn">Cancel</a>
             <input type="submit" value="Create product" class="create_btn" />
           </div>
         </div>
       </form>
     </section>
+
+    <!-- Scripts -->
+    <!-- Sweet Alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- Axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0-0/axios.min.js"></script>
+    <script src="./assets/js/add_product.js"></script>
   </body>
 </html>
