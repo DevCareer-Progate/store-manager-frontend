@@ -6,10 +6,17 @@ window.addEventListener('load', () => {
     location.href = '../../index.html'
   }
 
-  const { token } = JSON.parse(localStorage.getItem('user'))
+  $('#preloader').fadeOut(1000)
+
+  const { token, role } = JSON.parse(localStorage.getItem('user'))
 
   const config = {
     headers: { Authorization: `${token}` },
+  }
+
+  // Disable
+  if (!role.includes('admin')) {
+    $('#add_product_btn').hide()
   }
 
   // Get all products and prefill table
