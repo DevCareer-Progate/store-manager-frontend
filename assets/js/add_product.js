@@ -1,12 +1,15 @@
 // BASE Backend URL: https://store-manager-be.herokuapp.com/
 const API_URL = 'https://store-manager-be.herokuapp.com'
 
-window.addEventListener('DOMContentLoaded', () => {
+// Before page loads, check if the user is logged in
+window.addEventListener('load', () => {
   // Check if user is already logged in and redirect appropriately
   if (!localStorage.getItem('user')) {
     location.href = '../../index.html'
   }
+})
 
+window.addEventListener('DOMContentLoaded', () => {
   // If User doesn't have admin role, redirect to Sale Attendant Dashboad
   const user = JSON.parse(localStorage.getItem('user'))
   const role = user.role
@@ -41,8 +44,6 @@ window.addEventListener('DOMContentLoaded', () => {
       quantity: +quantity.value,
     }
 
-    console.log(token)
-
     const config = {
       headers: { Authorization: `${token}` },
     }
@@ -57,6 +58,7 @@ window.addEventListener('DOMContentLoaded', () => {
             button: 'Ok',
           }).then(() => {
             document.querySelector('.form').reset()
+            location.href = '../../inventory.html'
           })
       })
       .catch(err => {
