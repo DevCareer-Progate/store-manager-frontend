@@ -19,11 +19,15 @@
     ></script>
   </head>
   <body>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="status"></div>
+    </div>
     <div class="wrapper">
       <!-- header section -->
       <header class="inventory-header">
         <div class="header-logo">
-          <a href="#">
+          <a href="./index.html">
             <img src="./assets/Images/Group 15.png" alt="logo image"
           /></a>
         </div>
@@ -64,7 +68,10 @@
               <span><i class="fas fa-search"></i></span>Search
             </button>
 
-            <a href="./add_product.html" class="input__section-button"
+            <a
+              href="./add_product.html"
+              id="add_product_btn"
+              class="input__section-button"
               ><i class="fas fa-plus"></i>Add Product</a
             >
           </div>

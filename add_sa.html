@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard | Add SA</title>
+
+    <!-- Global CSS/Reset -->
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <!-- Index CSS -->
+    <link rel="stylesheet" href="./assets/css/index.css" />
+  </head>
+  <body>
+    <div>
+      <form method="POST">
+        <label for="username">Username: </label>
+        <input type="text" id="username" placeholder="Enter SA username" />
+
+        <label for="role">Role</label>
+        <select name="role" id="role" multiple>
+          <option value="">Select Role (Multiple)</option>
+          <option value="admin">Admin</option>
+          <option value="sa">SA</option>
+        </select>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter password" />
+
+        <button type="submit" class="register">Register</button>
+      </form>
+    </div>
+    <!-- Scripts -->
+    <!-- Sweet Alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- Axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0-0/axios.min.js"></script>
+
+    <script src="./assets/js/add_sa.js"></script>
+  </body>
+</html>
