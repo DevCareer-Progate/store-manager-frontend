@@ -1,0 +1,148 @@
+.main_wrapper {
+  height: 100vh;
+  width: 90%;
+  max-width: 1240px;
+  margin: auto;
+}
+body {
+  overflow: hidden;
+}
+header {
+  min-height: 8vh;
+  margin-top: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logout {
+  border: none;
+  background: #66a4ec;
+  color: white;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 19px;
+  padding: 0.5em 1.2em;
+  letter-spacing: 0.03em;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.logout:hover {
+  transform: translateY(-5px);
+}
+section {
+  display: flex;
+  justify-content: space-between;
+  height: 90vh;
+  align-items: center;
+}
+
+section h1 {
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 87px;
+  letter-spacing: 0.015em;
+  color: #264653;
+}
+
+section p {
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 44px;
+  letter-spacing: 0.015em;
+  color: #264653;
+}
+.section-content-links {
+  display: flex;
+  justify-content: space-between;
+}
+.section-content-links a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+.section-content-links p {
+  font-family: inherit;
+  font-weight: 800;
+  font-size: 28px;
+  letter-spacing: 0.03em;
+  color: #264653;
+  margin-top: 0;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle1 {
+  width: 227px;
+  height: 219px;
+  left: 1138px;
+  top: -85px;
+  z-index: -1;
+  background: rgba(102, 164, 236, 0.09);
+}
+.circle2 {
+  width: 227px;
+  height: 219px;
+  left: 506px;
+  top: 40px;
+  background: rgba(102, 164, 236, 0.09);
+}
+
+.circle3 {
+  width: 415px;
+  height: 400px;
+  left: 1277px;
+  top: 599px;
+  background: rgba(38, 70, 83, 0.05);
+}
+.circle4 {
+  width: 176px;
+  height: 170px;
+  left: 405px;
+  top: 657px;
+  background: rgba(102, 164, 236, 0.17);
+}
+@media (max-width: 760px) {
+  body {
+    overflow-y: auto;
+  }
+  section {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  section {
+    margin-top: 15vh;
+  }
+  section h1 {
+    font-size: 36px;
+    text-align: center;
+    line-height: 0;
+    margin-bottom: 1em;
+    font-weight: bold;
+  }
+  section p {
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 1.5em;
+  }
+  .section-content-links img {
+    width: 56px;
+  }
+  .section-content-links p {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .section-image {
+    width: 80%;
+  }
+  .section-image img {
+    width: 100%;
+  }
+}

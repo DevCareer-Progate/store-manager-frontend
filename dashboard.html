@@ -3,13 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/dashboard.css" />
     <title>Admin Dashboard</title>
   </head>
   <body>
-    <h1>Welcome to Admin Dashboard</h1>
+    <main class="main_wrapper">
+      <header>
+        <div class="header-logo">
+          <a href="./index.html">
+            <img src="./assets/Images/Group 15.png" alt="logo image"
+          /></a>
+        </div>
+        <div class="header-cta">
+          <button class="logout">Logout</button>
+        </div>
+      </header>
+      <section>
+        <div class="section-content">
+          <h1>Hi Welcome,</h1>
+          <p>
+            Control your store from anywhere, <br />
+            everywhere...
+          </p>
+          <div class="section-content-links">
+            <a href="./add_sa.html"
+              ><div class="add-sA">
+                <img src="./assets/Images/USER2.svg" alt="" />
+                <p>Add Sale Attendant</p>
+              </div></a
+            >
+            <a href="./inventory.html"
+              ><div class="add-sA">
+                <img src="./assets/Images/invent.svg" alt="" />
+                <p>Inventory</p>
+              </div></a
+            >
+          </div>
+        </div>
+        <div class="section-image">
+          <img src="./assets/Images/pngfuel.png" alt="" />
+        </div>
+      </section>
+    </main>
+    <div class="circle circle1"></div>
+    <div class="circle circle2"></div>
+    <div class="circle circle3"></div>
+    <div class="circle circle4"></div>
+
+    <!-- <h1>Welcome to Admin Dashboard</h1>
     <a href="./add_sa.html">Add Sale Attendant</a>
     <a href="./inventory.html">Inventory</a>
-    <button class="logout">Logout</button>
+    <button class="logout">Logout</button> -->
 
     <!-- Scripts -->
     <script src="./assets/js/dashboard.js"></script>
